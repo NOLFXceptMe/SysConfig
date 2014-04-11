@@ -1,0 +1,37 @@
+[user]
+	name = "Naveen Kumar Molleti"
+	email = "nerd.naveen@gmail.com"
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	a = add
+	br = branch
+	bd = branch -D
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cma = commit -a -m
+	co = checkout
+	cp = cherry-pick
+	d = diff
+	f = fetch
+	l = log
+	lp = log -p
+	p = push
+	po = push origin
+	pc = push central
+	pfo = push -f origin
+	puo = push -u origin
+	pco = push -u central
+	rb = rebase
+	ri = rebase -i
+	r = reset
+	rh = reset --hard
+	sh = show
+	st = status
+	t = today
+[core]
+	autocrlf = input
+	editor = vim

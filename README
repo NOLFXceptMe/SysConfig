@@ -1,0 +1,15 @@
+Config files
+------------
+.zshrc
+.vim/
+.vimrc
+.gitconfig
+.oh-my-zsh/
+.rtorrent.rc
+.screenrc
+vimium-keymaps-edit
+
+Helpful scripts
+---------------
+scripts/caps.sh
+scripts/imgurbash.sh
