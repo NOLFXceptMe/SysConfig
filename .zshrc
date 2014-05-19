@@ -36,3 +36,5 @@ vf() {
 }
 
 export M2_REPO="$HOME/.m2";
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
