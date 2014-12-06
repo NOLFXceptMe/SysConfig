@@ -1,13 +1,47 @@
+set nocompatible
+
 syntax on
 filetype plugin indent on
 colorscheme evening
 
-set autoindent
+" Set UTF-8
+set encoding=utf-8
+
+" Display current command
+set showcmd
+
+" Search settings
+set showmatch
+set ignorecase smartcase
+set hlsearch
 set incsearch
+
+" Show row, column
 set ruler
+
+" Show line numbers
+set number
+
+" Allows the backspace to delete indenting, end of lines, and over the start
+" of insert
+set backspace=indent,eol,start
+
+" Command line completion
 set wildmenu
+
+set cc=80
+set autoindent
+set expandtab
 set tabstop=4
 set shiftwidth=4
+
+set history=9999
+
+" Backups!
+" See https://github.com/jdavis/dotfiles/blob/master/.vimrc#L174
+set backup
+set writebackup
+set backupdir=~/.vim/backup/
 
 execute pathogen#infect()
 
