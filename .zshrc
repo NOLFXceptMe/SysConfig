@@ -27,6 +27,7 @@ bindkey -v
 
 # SSH Aliases
 alias g='git'
+alias grep='ag'
 
 # autojump
 source /etc/profile.d/autojump.zsh
