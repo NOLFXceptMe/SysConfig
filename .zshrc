@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 # Aliases
 
@@ -33,9 +34,11 @@ alias grep='ag'
 source /etc/profile.d/autojump.zsh
 
 vf() {
-	vi `find . -name "$*"`;
+    vi `find . -name "$*"`;
 }
 
 export M2_REPO="$HOME/.m2";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+PATH=$PATH:/opt/sbt/bin
