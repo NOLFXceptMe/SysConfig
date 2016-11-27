@@ -13,3 +13,9 @@ Helpful scripts
 ---------------
 scripts/caps.sh
 scripts/imgurbash.sh
+
+Required vim plugins
+--------------------
+nerdtree      [https://github.com/scrooloose/nerdtree]
+vim-airline   [https://github.com/vim-airline/vim-airline]
+vim-gitgutter [https://github.com/airblade/vim-gitgutter]
