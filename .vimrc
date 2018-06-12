@@ -7,7 +7,8 @@ syntax on
 " detect filetype, use plugins and indentation
 filetype plugin indent on
 
-colorscheme evening
+set t_Co=256
+colorscheme zenburn
 
 " Set UTF-8
 set encoding=utf-8
@@ -48,22 +49,19 @@ set cc=80
 " Remember : commands
 set history=100
 
-" Use a backup folder instead of writing to current working directory
-set backup
-set writebackup
-set backupdir=~/.vim/backup/
-
 " load pathogen
 execute pathogen#infect()
-
-" NERDTree plugin
-map <C-n> :NERDTreeToggle<CR>
 
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 com! FormatJSON %!python -m json.tool
 
-" Scala formatting
-au BufEnter *.scala setl formatprg=java\ -jar\ /home/naveen/.vim/scalariform.jar\ -f\ -q\ +compactControlReadability\ +alignParameters\ +alignSingleLineCaseStatements\ +doubleIndentClassDeclaration\ +preserveDanglingCloseParenthesis\ +rewriteArrowSymbols\ +preserveSpaceBeforeArguments\ --stdin\ --stdout
-
 " enable airline by default
 set laststatus=2
+
+" Open NERDTree if Vim is opened without an argument
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Ctrl-N toggles NERDTree window
+map <C-n> :NERDTreeToggle<CR>
+
