@@ -40,3 +40,11 @@ vf() {
 icons() {
   gsettings set org.nemo.desktop show-desktop-icons "$*";
 }
+
+# rbenv
+export PATH=$PATH:/home/naveen/.rbenv/bin
+eval "$(rbenv init -)"
+
+export PATH=$PATH:/home/naveen/racket/bin
+
+unsetopt CDABLE_VARS
